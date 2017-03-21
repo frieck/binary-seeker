@@ -2,10 +2,18 @@
   "name": "binary-seeker",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "./lib/seeker.js",
+  "bin": {
+    "seeker": "./bin/seeker.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "frieck",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "fs-jetpack": "^0.13.2",
+    "humanize": "0.0.9"
+  }
 }
